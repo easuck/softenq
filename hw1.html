@@ -53,6 +53,10 @@
     >
         ОмГУ им. Ф.М. Достоевского. Группа МИБ-001
     </div>
+
+    <input
+        onchange="changeHandler(event)"
+    />
 </div>
 
 <script>
@@ -69,5 +73,10 @@
     function mouseOut(event)
     {
         console.log("Парам", event);
+    }
+
+    function changeHandler(event)
+    {
+        alert(event.target.value)
     }
 </script>
