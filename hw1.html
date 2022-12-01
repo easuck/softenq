@@ -31,15 +31,43 @@
         }
     </style>
 
-    <p onclick = "clickHandler()" class = "flex_center"><img src="face.jpg" width = "600" height = "800" alt = "мое лицо"></p>
-    <div class = "toxic_and_bold flex_center">Асонов Егор Евгеньевич</div>
-    <div class = "aggressive_and_ligher flex_center">23.05.2001</div>
-    <div class = "skin_and_medium flex_center">ОмГУ им. Ф.М. Достоевского. Группа МИБ-001</div>
+    <div 
+        onclick = "clickHandler()" 
+        onmouseenter = "mouseEnter()"
+        onmouseout = "mouseOut()"
+        class = "flex_center"
+    >
+    <img src="face.jpg" width = "600" height = "800" alt = "мое лицо"></div>
+    <div 
+        class = "toxic_and_bold flex_center"
+    >
+        Асонов Егор Евгеньевич
+    </div>
+    <div 
+        class = "aggressive_and_ligher flex_center"
+    >
+        23.05.2001
+    </div>
+    <div 
+        class = "skin_and_medium flex_center"
+    >
+        ОмГУ им. Ф.М. Достоевского. Группа МИБ-001
+    </div>
 </div>
 
 <script>
     function clickHandler()
     {
         alert("Bruh! Look at this dude! Wait until you see the ooooh hu hu hu no no no no no... AHAHAHAHAHAHAHHAHAHA Oh look at the top of his head! Look at his lips!")
+    }
+
+    function mouseEnter(event)
+    {
+        console.log("Пам", event);
+    }
+
+    function mouseOut(event)
+    {
+        console.log("Парам", event);
     }
 </script>
